@@ -99,6 +99,72 @@
           }
         }
       }
+    },
+    "canvas": {
+      "projectType": "library",
+      "root": "projects/canvas",
+      "sourceRoot": "projects/canvas/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/canvas/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/canvas/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/canvas/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "tsConfig": "projects/canvas/tsconfig.spec.json",
+            "polyfills": [
+              "zone.js",
+              "zone.js/testing"
+            ]
+          }
+        }
+      }
+    },
+    "nodes": {
+      "projectType": "library",
+      "root": "projects/nodes",
+      "sourceRoot": "projects/nodes/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/nodes/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/nodes/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/nodes/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "tsConfig": "projects/nodes/tsconfig.spec.json",
+            "polyfills": [
+              "zone.js",
+              "zone.js/testing"
+            ]
+          }
+        }
+      }
     }
   }
 }

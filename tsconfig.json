@@ -3,7 +3,14 @@
 {
   "compileOnSave": false,
   "compilerOptions": {
-    "paths": {},
+    "paths": {
+      "canvas": [
+        "./dist/canvas"
+      ],
+      "nodes": [
+        "./dist/nodes"
+      ]
+    },
     "outDir": "./dist/out-tsc",
     "strict": true,
     "noImplicitOverride": true,
