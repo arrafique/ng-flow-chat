@@ -7,6 +7,12 @@
       "canvas": [
         "./dist/canvas"
       ],
+      "flow-chat-canvas": [
+        "./dist/flow-chat-canvas"
+      ],
+      "flow-chat-ui": [
+        "./dist/flow-chat-ui"
+      ],
       "nodes": [
         "./dist/nodes"
       ]

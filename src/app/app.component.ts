@@ -1,11 +1,10 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
-import { CanvasComponent } from '../../projects/canvas/src/lib/canvas.component';
+import { FlowChatCanvasComponent } from '../../projects/flow-chat-canvas/src/public-api';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, CanvasComponent],
+  imports: [FlowChatCanvasComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
 })
